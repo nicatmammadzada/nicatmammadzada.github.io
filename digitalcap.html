@@ -530,6 +530,33 @@ line-height: 186.9%;
 	<script src="assets/mediaelement/wp-mediaelement.js"></script>
 	<script src="assets/js/mediaelement-anii.js"></script>
 	<script>
+		jQuery( function(){
+			// initialize ajax form plugin
+			jQuery( '#contact_form' ).ajaxForm({
+				target: '#contact_alert'
+			});
+		});
+		var rangeSlider = function(){
+  var slider = $('.range-slider'),
+      range = $('.range-slider__range'),
+      value = $('.range-slider__value');
+    
+  slider.each(function(){
+
+    value.each(function(){
+      var value = $(this).prev().attr('value');
+      $(this).html(value);
+    });
+
+    range.on('input', function(){
+      $(this).next(value).html(this.value);
+    });
+  });
+};
+
+rangeSlider();
+	</script>
+	<script>
 		var x, i, j, l, ll, selElmnt, a, b, c;
 		/*look for any elements with the class "custom-select":*/
 		x = document.getElementsByClassName("custom-select");
