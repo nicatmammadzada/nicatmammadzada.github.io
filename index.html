@@ -1,0 +1,922 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+	<title>Serq Qerb Web Dizayn</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<meta name="description" content="Anii is fully responsive creative audio podcast HTML site template that looks great on any device.">
+	<meta name="keywords" content="Design, Development">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700%7CPoppins:400,600" rel="stylesheet">
+
+	<link rel="stylesheet" href="assets/css/materialdesignicons.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-grid.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/responsiv.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	<style id="anii-inline-style">
+		.sales-box {
+			background-image: url(tmp/sample-sales-background.jpg);
+		}
+		*{
+  margin: 0;
+  padding: 0;
+}
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+.wd-carusel {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px 5px;
+  position: relative;
+}
+.wd-carusel__wrap{
+	width: 1800px !important;
+}
+.wd-carusel__wrap{
+  min-width: 1000px !important;
+}
+.wd-carusel__item {
+  float: left;
+  text-align: center;
+  position: relative;
+  user-select:none;
+  height: 110px ;
+    line-height: 110px;
+    text-align: center;
+    margin: 1em 0;
+}
+.wd-carusel__item:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+}
+.wd-carusel__item > img {
+	
+    vertical-align: middle;
+    max-height: 110px;
+  display: block;
+  max-width: 110px;
+  height: auto;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+.wd-carusel__wrap {
+  transition: transform .4s;
+}
+.wd-carusel__wrap:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+.wd-carusel__nav--icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  transform: translate(0, -50%);
+  position: absolute;
+  cursor: pointer;
+}
+.wd-carusel__nav--left {
+  left: 10px;
+}
+.wd-carusel__nav--right {
+ right: 10px; 
+}
+	</style>
+	<style>
+		/*the container must be positioned relative:*/
+		.custom-select {
+		  position: relative;
+		  font-family: Arial;
+		}
+		
+		.custom-select select {
+		  display: none; /*hide original SELECT element:*/
+		}
+		
+		.select-selected {
+		  background-color: transparent;
+		  /* width:20%; */
+		}
+		
+		/*style the arrow inside the select element:*/
+		.select-selected:after {
+		  position: absolute;
+		  content: "";
+		  top: 14px;
+		  right: -15px;
+		  width: 0;
+		  height: 0;
+		  border: 6px solid transparent;
+		  border-color: #fff transparent transparent transparent;
+		}
+		
+		/*point the arrow upwards when the select box is open (active):*/
+		.select-selected.select-arrow-active:after {
+		  border-color: transparent transparent #fff transparent;
+		  top: 7px;
+		}
+		
+		/*style the items (options), including the selected item:*/
+		.select-items div,.select-selected {
+		  color: #fff;
+		  text-align: center;
+		  /* padding: 8px 16px; */
+		  border: 1px solid transparent;
+		  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+		  cursor: pointer;
+		  user-select: none;
+		}
+		.custom-select{
+				 background: transparent;		/*style items (options):*/
+				 padding: 5px;
+				 height: auto;
+				 border-radius: 10px;
+		}
+		.select-items {
+		  position: absolute;
+		  /* background-color: DodgerBlue; */
+		   /* width:20%; */
+		  top: 100%;
+		  left: 0;
+		  right: 0;
+		  z-index: 99;
+		}
+		
+		/*hide the items when the select box is closed:*/
+		.select-hide {
+		  display: none;
+		}
+		
+		.select-items div:hover, .same-as-selected {
+		  background-color: rgba(0, 0, 0, 0.1);
+		}
+		</style>
+</head>
+<body class="home footer-sticky">
+	<header id="top">
+		<div class="navbar navbar-sticky pl-0 pr-0">
+	
+			<div class="row align-items-center">
+				<div class="site-title col col-lg-auto order-first p-o">
+				
+						<a href="index.html" class="custom-logo-link" rel="home">
+							<img src="tmp/logo.png" class="custom-logo" width="150" height="40" alt="eastwest">
+						</a>
+					
+				</div>
+				<nav id="site-menu" class="col-12 col-lg order-3 order-sm-4 order-lg-2">
+					<ul>
+						<li class="menu-item menu-item-has-children current-menu-parent">
+							<a href="haqqinda.html">Haqqında</a>
+							<a href="haqqinda.html" class="menu-expand"></a>
+							<ul class="sub-menu">
+								<li style="list-style-type: disc;" class="menu-item "><a href="">Nəşriyyat</a></li>
+								<li  style="list-style-type: disc;" class="menu-item"><a href="">Mətbəə</a></li>
+								<li  style="list-style-type: disc;" class="menu-item"><a href="">Məlumat</a></li>
+
+							</ul>
+						</li>
+						<li class="menu-item"><a href="xeberler.html">Xəbərlər</a></li>
+						<li class="menu-item menu-item-has-children ">
+							<a href="#">Xidmətlər</a>
+							<a href="#" class="menu-expand"></a>
+							<ul class="sub-menu">
+								<li style="list-style-type: disc;" class="menu-item "><a href="nesriyyat.html">Nəşriyyat</a></li>
+								<li  style="list-style-type: disc;" class="menu-item"><a href="ofsetchapi.html">Ofset Çapı</a></li>
+								<li  style="list-style-type: disc;" class="menu-item"><a href="digitalcap.html">Digital Çap</a></li>
+								<li  style="list-style-type: disc;" class="menu-item"><a href="catdirilma.html">Çatdırılma</a></li>
+
+							</ul>
+						</li>
+						<li class="menu-item menu-item-has-children ">
+							<a href="#">Məhsullar</a>
+							<a href="#" class="menu-expand"></a>
+							<ul class="sub-menu">
+								<li style="list-style-type: disc;" class="menu-item "><a href="mehsul-page.html">Kİtab</a></li>
+								<li  style="list-style-type: disc;" class="menu-item"><a href="mehsul-page.html">Kataloqlar</a></li>
+								<li  style="list-style-type: disc;" class="menu-item"><a href="mehsul-page.html">Jurnallar</a></li>
+								<li  style="list-style-type: disc;" class="menu-item"><a href="mehsul-page.html">Təqvimlər</a></li>
+								<li  style="list-style-type: disc;" class="menu-item"><a href="mehsul-page.html">Bukletlər</a></li>
+								
+							</ul>
+						</li>
+						<li class="menu-item"><a href="contact.html">Əlaqə</a></li>
+					</ul>
+				</nav>
+				<div class="call-to-action col-12 col-lg-auto order-5 order-xl-4">
+					<div class="custom-select" style="width:30px;">
+						<select>
+						  <option value="0">az</option>
+						  <option value="1">az</option>
+						  <option value="1">en</option>
+						</select>
+					  </div>
+				</div>
+				<div class="site-menu-toggle col-auto order-2 order-sm-3">
+					<a href="#site-menu">
+						<span class="screen-reader-text">Toggle navigation</span>
+					</a>
+				</div>
+			</div>
+		
+	</div>
+		<div id="featured" class="featured-content p-0" style="background-image:url('tmp/header_bg.png')">
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+				  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="row">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
+								
+								
+										<div class="carousel-item-div" style="transform: translateY(25%);">
+											<div id="intro-description ">
+												<div class="container">
+													<div class="row justify-content-around ">
+														
+														<div class=" feature-boxx">
+															 <img class="feature-box-img d-block m-auto" src="tmp/metbee2.png">
+															<p class="text-center mt-1" style="width: 80px;">Mətbəə</p>
+														</div>
+														<div class=" feature-boxx">
+															<img class="feature-box-img d-block m-auto" src="tmp/nesr2.png">
+															<p class="text-center mt-1" style="width: 80px;">Nəşriyyat</p>
+														</div>
+														<div class="feature-boxx">
+															<img class="feature-box-img d-block m-auto" src="tmp/reqemsalcap2.png">
+															<p class="text-center mt-1" style="width: 80px;">Rəqəmsal Çap</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="feature-box-detail mt-5">
+												<h2>
+													<a href="" style="color: #fff;">POLİQRAFİYA</a>
+													<span class="d-block fontsize_100">məhsullarının istehsalı</span>
+												</h2>
+											   <p class="featured-header-text">Bizim təcrübəmiz və imkanlarımız bir neçə istiqamətdə
+												   işləməyə imkan verir: kitabların, jurnalların, işgüzar və 
+												   reklam poliqrafiya məhsullarının istehsalı </p>
+												<p class="text-right" style="width: 90%;color: #fff;">
+													<a href="haqqinda.html" class="line-link">daha çox</a>
+												</p>
+											</div>
+											
+										</div>
+								
+							
+								
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
+								<div id="featured-media" class="">
+									<img src="tmp/poliq.png" alt="">
+								</div>
+							</div>
+						</div>
+					  </div>
+				  <!-- <div class="carousel-item ">
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mt-5">
+							<div class="container">
+								<div class="row">
+									<div class="carousel-item-div">
+										<div id="intro-description ">
+											<div class="container">
+												<div class="row">
+													
+													<div class="col-4 feature-box">
+														 <img class="feature-box-img d-block m-auto" src="tmp/metbee.png">
+														<p class=" feature-box-p text-center mt-1">Mətbəə</p>
+													</div>
+													<div class="col-4 feature-box">
+														<img class="feature-box-img d-block m-auto" src="tmp/nesriyyat.png">
+														<p class="feature-box-p text-center mt-1">Nəşriyyat</p>
+													</div>
+													<div class="col-4 feature-box">
+														<img class="feature-box-img d-block m-auto" src="tmp/nesriyyat.png">
+														<p class="feature-box-p text-center mt-1">Digital Çap</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="feature-box-detail mt-5">
+											<h2><a href="">Poliqrafiya 
+												<span class="d-block fontsize_100">MƏHSULLARININ İSTEHSALI</span></p>
+										   <p class="featured-header-text">Bizim təcrübəmiz və imkanlarımız bir neçə istiqamətdə
+											   işləməyə imkan verir: kitabların, jurnalların, işgüzar və 
+											   reklam poliqrafiya məhsullarının istehsalı.Bizim təcrübəmiz və imkanlarımız bir neçə istiqamətdə
+											   işləməyə imkan verir: kitabların, jurnalların, işgüzar və 
+											   reklam poliqrafiya məhsullarının istehsalı </p>
+											<p class="text-right"><a href="haqqinda.html" class="line-link">daha ətraflı</a></p>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
+							<div id="featured-media" class="">
+								<img src="tmp/poliq.png" alt="">
+							</div>
+						</div>
+					</div>
+				  </div>
+				 
+				  <div class="carousel-item">
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mt-5">
+							<div class="container">
+								<div class="row">
+									<div class="carousel-item-div">
+										<div id="intro-description ">
+											<div class="container">
+												<div class="row">
+													
+													<div class="col-4 feature-box">
+														 <img class="feature-box-img d-block m-auto" src="tmp/metbee.png">
+														<p class="text-center mt-1">Mətbəə</p>
+													</div>
+													<div class="col-4 feature-box">
+														<img class="feature-box-img d-block m-auto" src="tmp/nesriyyat.png">
+														<p class="text-center mt-1">Nəşriyyat</p>
+													</div>
+													<div class="col-4 feature-box">
+														<img class="feature-box-img d-block m-auto" src="tmp/nesriyyat.png">
+														<p class="text-center mt-1">Digital Çap</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="feature-box-detail mt-5">
+											<h2><a href="single-episode.html">Brendinizə 
+												<span class="d-block fontsize_100">UYĞUN KATALOQ</span></p>
+										   <p class="featured-header-text">Bizim təcrübəmiz və imkanlarımız bir neçə istiqamətdə
+											   işləməyə imkan verir: kitabların, jurnalların, işgüzar və 
+											   reklam poliqrafiya məhsullarının istehsalı.Bizim təcrübəmiz və imkanlarımız bir neçə istiqamətdə
+											   işləməyə imkan verir: kitabların, jurnalların, işgüzar və 
+											   reklam poliqrafiya məhsullarının istehsalı. </p>
+											<p class="text-right"><a href="haqqinda.html" class="line-link">daha ətraflı</a></p>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
+							<div id="featured-media" class="">
+								<img src="tmp/katalog.png" alt="">
+							</div>
+						</div>
+					</div>
+				  </div> -->
+				</div>
+				<!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="sr-only">Next</span>
+				</a> -->
+			  </div>
+			
+			
+		</div>
+	</header>
+
+	<main id="content" style="background-image: url(tmp/bg.png);">
+		
+	
+			<div class="xeber_basligi_all">
+			
+				    <div class="xeber_basligi">
+						<div class="row">
+							<div class="col-12" >
+								  <img  class="xeber_basligi_img" src="tmp/sample-episode1.jpg">
+							</div>
+							<div class="col-12 ">
+								  <h3 class="mt-3">Təhsil Nazirliyi ilə yeni əməkdaşlığımız</h3>
+								  <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eos modi, commodi inventore maiores pariatur facere explicabo nemo quo provident aut ducimus animi voluptates vitae sapiente aliquid vel! Libero, consectetur.</p>
+								  <p class="text-right"><a href="haqqinda.html" class="line-link">daha ətraflı</a></p>
+							</div>
+						</div>
+					</div>
+		
+					<div class="xeber_basligi d-none d-sm-block">
+						<div class="row">
+							<div class="col-12" >
+								<img  class="xeber_basligi_img" src="tmp/sample-episode1.jpg">
+							</div>
+							
+							<div class="col-12">
+								<h3 class="mt-3" >İllik Hesabata çağırış</h3><br>
+								<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eos modi, commodi inventore maiores pariatur facere explicabo nemo quo provident aut ducimus animi voluptates vitae sapiente aliquid vel! Libero, consectetur.</p>
+								<p class="text-right"><a href="haqqinda.html" class="line-link">daha ətraflı</a></p>
+						  </div>
+							
+						</div>
+					</div>
+					<div class="xeber_basligi d-none d-sm-block">
+						<div class="row">
+							<div class="col-12" >
+								<img class="xeber_basligi_img" src="tmp/sample-episode1.jpg">
+							</div>
+							<div class="col-12">
+								<h3 class="mt-3">İllik Hesabata çağırış</h3><br>
+								<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eos modi, commodi inventore maiores pariatur facere explicabo nemo quo provident aut ducimus animi voluptates vitae sapiente aliquid vel! Libero, consectetur.</p>
+								<p class="text-right"><a href="haqqinda.html" class="line-link">daha ətraflı</a></p>
+						  </div>
+						
+							
+						</div>
+					</div>
+		
+		
+	         </div>
+	        <div id="featured section3 "   class="featured-content p-0 section3">
+		<div class="">
+			<div class="row">
+				<div class="col-12 col-md-6 p-0">
+					<div id="featured-media" class="">
+						<img src="tmp/dovurlu.png" alt="">
+					</div>
+				</div>
+				<div class="col-12 col-md-6  section_3">
+					<div class="container">
+						<div class="row">
+							<div class="">
+								<div class="feature-box-detail">
+									<h2 class="" style="text-align: right;">
+										<a  href="">üstün keyfiyyətli </a>
+										<span class="d-block detail_span">KİTABLARIN NƏŞRİ</span>
+										</h2>
+								   <p class="featured-header-text">Tam dövrlü “Şərq-Qərb” mətbəəsinin müasir avadanlığı müxtəlifcild
+									və işləmə növlərinin tətbiqi ilə yüksək keyfiyyətli kitab istehsalını
+									təmin edir.Tam dövrlü “Şərq-Qərb” mətbəəsinin müasir avadanlığı müxtəlifcild
+									və işləmə növlərinin tətbiqi ilə yüksək keyfiyyətli kitab istehsalını
+									təmin edir.Tam dövrlü “Şərq-Qərb” mətbəəsinin müasir avadanlığı müxtəlifcild
+									və işləmə növlərinin tətbiqi ilə yüksək keyfiyyətli kitab istehsalını
+									təmin edir.</p>
+									<p class="text-right"><a href="haqqinda.html" class="line-link" style="color: #000000;">daha ətraflı</a></p>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+		
+	        </div>
+
+			<div id="latest-tab-container " class="aa" >
+			
+				<div  style="padding: 70px 0;">
+					<div class="row">
+						<div class="col-12">
+							<div id="intro-description ">
+								<div class="container">
+									<div class="row">
+								
+										<div class="feature-box col-md-2 col-4 ">
+											 <img class="feature-box2-img d-block m-auto" src="tmp/kitab.png">
+											<p class="feature-box-p text-center mehsul_text mt-2 mb-0">Kitablar</p>
+										</div>
+										<div class=" feature-box col-md-2 col-4  col-md-half-offset">
+											<img class="feature-box2-img d-block m-auto" src="tmp/kataloq.png">
+											<p class="feature-box-p text-center mehsul_text mt-2 mb-0">Kataloqlar</p>
+										</div>
+										<div class=" feature-box col-md-2 col-4  col-md-half-offset">
+											<img class="feature-box2-img d-block m-auto" src="tmp/kataloq.png">
+											<p class="feature-box-p text-center mehsul_text mt-2 mb-0">Jurnallar</p>
+										</div>
+										<div class="feature-box col-md-2 col-4  col-md-half-offset">
+											<img class="feature-box2-img d-block m-auto" src="tmp/buklet.png">
+											<p class="feature-box-p text-center mehsul_text mt-2 mb-0">Təqvimlər</p>
+										</div>
+										<div class="feature-box col-md-2 col-4  col-md-half-offset">
+											<img class="feature-box2-img d-block m-auto" src="tmp/buklet.png">
+											<p class=" feature-box-p text-center mehsul_text mt-2 mb-0">Bukletlər</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="featured "   class="featured-content p-0 section4">
+				<div class="">
+					<div class="row">
+						
+						<div class="col-12 col-md-6  section_3">
+							<div class="container">
+								<div class="row">
+									<div class="">
+										<div class="feature-box-detail">
+											<h2 class="" style="text-align: right;">
+												<a  href="">tam dövürlü </a>
+												<span class="d-block detail_span">POLİQRAFİYA</span>
+												</h2>
+										   <p class="featured-header-text">Tam dövrlü “Şərq-Qərb” mətbəəsinin müasir avadanlığı müxtəlifcild
+											və işləmə növlərinin tətbiqi ilə yüksək keyfiyyətli kitab istehsalını
+											təmin edir.Tam dövrlü “Şərq-Qərb” mətbəəsinin müasir avadanlığı müxtəlifcild
+											və işləmə növlərinin tətbiqi ilə yüksək keyfiyyətli kitab istehsalını
+											təmin edir.Tam dövrlü “Şərq-Qərb” mətbəəsinin müasir avadanlığı müxtəlifcild
+											və işləmə növlərinin tətbiqi ilə yüksək keyfiyyətli kitab istehsalını
+											təmin edir.</p>
+											<p class="text-right"><a href="haqqinda.html" class="line-link" style="color: #000000;">daha ətraflı</a></p>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="col-12 col-md-6 p-0">
+							<div id="featured-media" class="">
+								<img src="tmp/1a 3.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				
+					</div>
+			<!-- <div id="featured section3"   class="featured-content p-0">
+				<div class="">
+					<div class="row">
+						<div class="col-12 col-md-6  section_5">
+							<div class="container">
+								<div class="row">
+									<div class="carousel-item-div">
+										<div class="feature-box-detail">
+											<h2 ><a  href="">TAM DÖVRLÜ POLIQRAFİYA
+										   <p class="featured-header-text">“Şərq-Qərb” Açıq Səhmdar Cəmiyyəti 1986-cı ildən etibarən dövlət müəssisəsi
+											olaraq 4 nömrəli Bakı kitab mətbəəsi kimi fəaliyyətə başlamışdır. 2001-ci ildə
+											müəssisənin təşkilati-hüquqi forması dəyişdirilmiş və o, “Şərq-Qərb” Açıq
+											Səhmdar Cəmiyyətinə (ASC) çevrilmişdir. Əsas fəaliyyət növü nəşr və çap
+											işləri olan “Şərq - Qərb” ASC-nin tərkibində Nəşriyyat Departamenti·və
+											Mətbəə fəaliyyət göstərir.</p>
+											<p class="text-left"><a href="haqqinda.html" class="line-link">daha ətraflı</a></p>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="col-12 col-md-6 p-0">
+							<div id="featured-media" class="">
+								<img src="tmp/dovrlu.png" alt="">
+							</div>
+						</div>
+					
+						
+					</div>
+				</div>
+				
+			</div> -->
+			<div id="latest-tab-container " class="aa" >
+			
+				<div  style="padding: 70px 0;">
+					<div class="row">
+						<div class="col-12">
+							<div id="intro-description ">
+								<div class="container">
+									<div class="row">
+								
+										<div class="feature-box col-md-2 col-4 ">
+											 <img class="feature-box2-img d-block m-auto" src="tmp/kitab.png">
+											<p class="feature-box-p text-center mehsul_text mt-2 mb-0">Kitablar</p>
+										</div>
+										<div class=" feature-box col-md-2 col-4  col-md-half-offset">
+											<img class="feature-box2-img d-block m-auto" src="tmp/kataloq.png">
+											<p class="feature-box-p text-center mehsul_text mt-2 mb-0">Kataloqlar</p>
+										</div>
+										<div class=" feature-box col-md-2 col-4  col-md-half-offset">
+											<img class="feature-box2-img d-block m-auto" src="tmp/kataloq.png">
+											<p class="feature-box-p text-center mehsul_text mt-2 mb-0">Jurnallar</p>
+										</div>
+										<div class="feature-box col-md-2 col-4  col-md-half-offset">
+											<img class="feature-box2-img d-block m-auto" src="tmp/buklet.png">
+											<p class="feature-box-p text-center mehsul_text mt-2 mb-0">Təqvimlər</p>
+										</div>
+										<div class="feature-box col-md-2 col-4  col-md-half-offset">
+											<img class="feature-box2-img d-block m-auto" src="tmp/buklet.png">
+											<p class=" feature-box-p text-center mehsul_text mt-2 mb-0">Bukletlər</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="featured section3 "   class="featured-content p-0 section3">
+				<div class="">
+					<div class="row">
+						<div class="col-12 col-md-6 p-0">
+							<div id="featured-media" class="">
+								<img src="tmp/Faberlik 1 1.png" alt="" style="padding: 70px;">
+							</div>
+						</div>
+						<div class="col-12 col-md-6  section_3">
+							<div class="container">
+								<div class="row">
+									<div class="">
+										<div class="feature-box-detail">
+											<h2 class="" style="text-align: right;">
+												<a  href="">tam dövürlü </a>
+												<span class="d-block detail_span">POLİQRAFİYA</span>
+												</h2>
+										   <p class="featured-header-text">Tam dövrlü “Şərq-Qərb” mətbəəsinin müasir avadanlığı müxtəlifcild
+											və işləmə növlərinin tətbiqi ilə yüksək keyfiyyətli kitab istehsalını
+											təmin edir.Tam dövrlü “Şərq-Qərb” mətbəəsinin müasir avadanlığı müxtəlifcild
+											və işləmə növlərinin tətbiqi ilə yüksək keyfiyyətli kitab istehsalını
+											təmin edir.Tam dövrlü “Şərq-Qərb” mətbəəsinin müasir avadanlığı müxtəlifcild
+											və işləmə növlərinin tətbiqi ilə yüksək keyfiyyətli kitab istehsalını
+											təmin edir.</p>
+											<p class="text-right"><a href="haqqinda.html" class="line-link" style="color: #000000;">daha ətraflı</a></p>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						
+					</div>
+				</div>
+				
+					</div>
+		
+		
+		<div class="section8 aa">
+			
+			<div class="xeber_basligi_all">
+			
+				<div class="xeber_basligii">
+					
+						<div class="row">
+							<div class="col-12">
+								
+								<p class="text-justify rey_p">üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli</p>
+						  </div>
+							<div class="col-12 " style="display: flex;">
+								  <img class="rey_img" src="tmp/user1.jpg">
+								  <h3 class="text-right rey_p3">Əli Əliyev</h3>
+							</div>
+							
+						</div>
+					</div>
+		
+					<div class="xeber_basligii">
+					
+						<div class="row">
+							<div class="col-12">
+								
+								<p class="text-justify rey_p">üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli üstün keyfiyyətli</p>
+						  </div>
+							<div class="col-12" style="display: flex;">
+								  <img class="rey_img" src="tmp/user1.jpg">
+								  <h3 class="text-right rey_p3">Əli Əliyev</h3>
+							</div>
+							
+						</div>
+					</div>
+		
+		</div>
+
+		 <div class="container" style="padding:100px 0">
+			<!-- <h2 class="text-center pt-3 d-block">PARTNYORLAR</h2> -->
+			<div class="wd-carusel">
+		
+				<div class="container">
+					<div class="wd-carusel__item"><img src="tmp/tehsil.png"></div>
+				<div class="wd-carusel__item"><img src="tmp/medeniyyet.png"></div>
+				<div class="wd-carusel__item"><img src="tmp/azercell.png"></div>
+				<div class="wd-carusel__item"><img src="tmp/elmlerakademiyasi.png"></div>
+				<div class="wd-carusel__item"><img src="tmp/pasabank.png"></div>
+				<div class="wd-carusel__item"><img src="tmp/tehsil.png"></div>
+				<div class="wd-carusel__item"><img src="tmp/medeniyyet.png"></div>
+				<div class="wd-carusel__item"><img src="tmp/azercell.png"></div>
+				<div class="wd-carusel__item"><img src="tmp/pasabank.png"></div>
+				</div>
+	
+				
+			  </div>
+		 </div>
+	</main>
+	
+	
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="widget-area col-12 pt-5">
+					<hr class="footer_hr">
+					<!-- <section class="widget widget_text">
+						<div class="textwidget">
+							<form class="mc4wp-form" method="post">
+								<div class="mc4wp-form-fields">
+									<p class="one-line d-flex justify-content-center">
+										<label class="screen-reader-text" for="subscribe_email">Email Adresinizi yazin</label>
+										<input id="subscribe_email" name="email" required placeholder="Email Adresinizi yazin" type="email">
+										<i class="fa fa-search" aria-hidden="true" style="margin-left: -35px;
+										font-size: 25px;
+										margin-top: 8px;"></i>
+									</p>
+								</div>
+							</form>
+						</div>
+					</section> -->
+					<section class="widget widget_nav">
+						<h3 class="screen-reader-text">MENU</h3>
+						<nav>
+							<ul class="d-flex justify-content-center">
+								<li class="menu-item menu-item-type-custom">
+									<a title="Facebook Profile" target="_blank" href="haqqinda.html">Haqqımızda</a>
+								</li>
+								<li class="menu-item menu-item-type-custom">
+									<a title="Google Play" target="_blank" href="contact.html">Bizimle ƏLaqə</a>
+								</li>
+								<li class="menu-item menu-item-type-custom">
+									<a title="Spotify Mixtape" target="_blank" href="">Xəbərlər</a>
+								</li>
+								<li class="menu-item menu-item-type-custom">
+							</ul>
+						</nav>
+					</section>
+					<section class="widget widget_nav">
+						<h3 class="screen-reader-text">Social Navigation</h3>
+						<nav>
+							<ul class="social-navigation">
+								<li class="menu-item menu-item-type-custom">
+									<a title="Facebook Profile" target="_blank" href="https://facebook.com/"><span class="screen-reader-text">Facebook Profile</span></a>
+								</li>
+								<li class="menu-item menu-item-type-custom">
+									<a title="Google Play" target="_blank" href="https://play.google.com/"><span class="screen-reader-text">Google Play</span></a>
+								</li>
+								<li class="menu-item menu-item-type-custom">
+									<a title="YouTube Channel" target="_blank" href="https://youtube.com/"><span class="screen-reader-text">YouTube Channel</span></a>
+								</li>
+							</ul>
+						</nav>
+					</section>
+				</div>
+				
+			</div>
+		</div>
+	</footer>
+
+	<script src="assets/js/jquery-3.2.1.min.js"></script>
+	<script src="assets/js/modernizr-custom.js"></script>
+	<script src="assets/js/functions.js"></script>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<link rel="stylesheet" id="mediaelement-css" href="assets/mediaelement/mediaelementplayer-legacy.css">
+	<link rel="stylesheet" id="wp-mediaelement-css" href="assets/mediaelement/wp-mediaelement.css">
+	<link rel="stylesheet" id="anii-additional-mediaelement-css" href="assets/css/mediaelement-anii.css">
+	<script src="assets/mediaelement/mediaelement-and-player.js"></script>
+	<script src="assets/mediaelement/mediaelement-migrate.js"></script>
+	<script src="assets/mediaelement/wp-mediaelement.js"></script>
+	<script src="assets/js/mediaelement-anii.js"></script>
+	<script>
+		var x, i, j, l, ll, selElmnt, a, b, c;
+		/*look for any elements with the class "custom-select":*/
+		x = document.getElementsByClassName("custom-select");
+		l = x.length;
+		for (i = 0; i < l; i++) {
+		  selElmnt = x[i].getElementsByTagName("select")[0];
+		  ll = selElmnt.length;
+		  /*for each element, create a new DIV that will act as the selected item:*/
+		  a = document.createElement("DIV");
+		  a.setAttribute("class", "select-selected");
+		  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+		  x[i].appendChild(a);
+		  /*for each element, create a new DIV that will contain the option list:*/
+		  b = document.createElement("DIV");
+		  b.setAttribute("class", "select-items select-hide");
+		  for (j = 1; j < ll; j++) {
+			/*for each option in the original select element,
+			create a new DIV that will act as an option item:*/
+			c = document.createElement("DIV");
+			c.innerHTML = selElmnt.options[j].innerHTML;
+			c.addEventListener("click", function(e) {
+				/*when an item is clicked, update the original select box,
+				and the selected item:*/
+				var y, i, k, s, h, sl, yl;
+				s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+				sl = s.length;
+				h = this.parentNode.previousSibling;
+				for (i = 0; i < sl; i++) {
+				  if (s.options[i].innerHTML == this.innerHTML) {
+					s.selectedIndex = i;
+					h.innerHTML = this.innerHTML;
+					y = this.parentNode.getElementsByClassName("same-as-selected");
+					yl = y.length;
+					for (k = 0; k < yl; k++) {
+					  y[k].removeAttribute("class");
+					}
+					this.setAttribute("class", "same-as-selected");
+					break;
+				  }
+				}
+				h.click();
+			});
+			b.appendChild(c);
+		  }
+		  x[i].appendChild(b);
+		  a.addEventListener("click", function(e) {
+			  /*when the select box is clicked, close any other select boxes,
+			  and open/close the current select box:*/
+			  e.stopPropagation();
+			  closeAllSelect(this);
+			  this.nextSibling.classList.toggle("select-hide");
+			  this.classList.toggle("select-arrow-active");
+			});
+		}
+		function closeAllSelect(elmnt) {
+		  /*a function that will close all select boxes in the document,
+		  except the current select box:*/
+		  var x, y, i, xl, yl, arrNo = [];
+		  x = document.getElementsByClassName("select-items");
+		  y = document.getElementsByClassName("select-selected");
+		  xl = x.length;
+		  yl = y.length;
+		  for (i = 0; i < yl; i++) {
+			if (elmnt == y[i]) {
+			  arrNo.push(i)
+			} else {
+			  y[i].classList.remove("select-arrow-active");
+			}
+		  }
+		  for (i = 0; i < xl; i++) {
+			if (arrNo.indexOf(i)) {
+			  x[i].classList.add("select-hide");
+			}
+		  }
+		}
+		/*if the user clicks anywhere outside the select box,
+		then close all select boxes:*/
+		document.addEventListener("click", closeAllSelect);
+		</script>
+	<script>
+		var videoPlayButton,
+	videoWrapper = document.getElementsByClassName('video-wrapper')[0],
+    video = document.getElementsByTagName('video')[0],
+    videoMethods = {
+        renderVideoPlayButton: function() {
+            if (videoWrapper.contains(video)) {
+				this.formatVideoPlayButton()
+                video.classList.add('has-media-controls-hidden')
+                videoPlayButton = document.getElementsByClassName('video-overlay-play-button')[0]
+                videoPlayButton.addEventListener('click', this.hideVideoPlayButton)
+            }
+        },
+
+        formatVideoPlayButton: function() {
+            videoWrapper.insertAdjacentHTML('beforeend', '\
+                <svg class="video-overlay-play-button" viewBox="0 0 200 200" alt="Play video">\
+                    <circle cx="100" cy="100" r="90" fill="none" stroke-width="15" stroke="#fff"/>\
+                    <polygon points="70, 55 70, 145 145, 100" fill="#fff"/>\
+                </svg>\
+            ')
+        },
+
+        hideVideoPlayButton: function() {
+            video.play()
+            videoPlayButton.classList.add('is-hidden')
+            video.classList.remove('has-media-controls-hidden')
+            video.setAttribute('controls', 'controls')
+        }
+	}
+
+videoMethods.renderVideoPlayButton()
+	</script>
+</body>
+
+</html>
