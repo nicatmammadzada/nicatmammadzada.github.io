@@ -1,7 +1,22 @@
 /* style="background: radial-gradient(circle at 0%, #055758, #055f58 31%, #055f58 0%,rgba(255, 255, 255, 0.1) 0%);" */
 @font-face {
-    font-family: bahnsch;
-    src: url(../fonts/BAHNSCHRIFT.TTF);
+    font-family: Montserrat_m;
+    src: url(../fonts/Montserrat-Medium.ttf);
+  }
+  @font-face {
+    font-family: Montserrat_r;
+    src: url(../fonts/Montserrat-Regular.ttf);
+  }
+  @font-face {
+    font-family: Montserrat_s;
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+  }
+  @font-face {
+    font-family: Montserrat_b;
+    src: url(../fonts/Montserrat-Bold.ttf);
+  }
+  main{
+      overflow-y: hidden;
   }
   .video-wrapper {
     position: relative;
@@ -78,18 +93,85 @@ section {
     display: block
 }
 .section3{
-    width: 95%;
+    width: 75%;
     margin-left:auto; margin-right:0;
     background: #E8E8E8;
 border-radius: 365px 0px 0px 365px;
+position: relative;
+z-index: 3;
 
 }
+.section3 .feature-box-detail h2 a {
+    font-family: Montserrat_r;
+font-style: normal;
+font-weight: normal;
+font-size: 45px;
+line-height: 55px;
+text-align: center;
+
+color: #474747;
+}
+.section3 .feature-box-detail{
+    padding: 70px 0;
+}
+.section3 .feature-box-detail h2 span{
+    font-family: Montserrat_b;
+font-style: normal;
+font-weight: bold;
+font-size: 43px;
+line-height: 52px;
+/* text-align: center; */
+
+color: #474747;
+}
+.section3 .featured-header-text, .section3 .line-link{
+    font-family: Montserrat_r;
+font-style: normal;
+font-weight: normal;
+font-size: 17px;
+text-align: justify;
+line-height: 21px;
+
+color: #000000;
+}
 .section4{
-    width: 95%;
+    width: 75%;
     margin-right:auto; 
     margin-left:0;
     background: #E8E8E8;
 border-radius: 0px 365px  365px 0px;
+}
+.section4 .feature-box-detail h2 a{
+    font-family: Montserrat_r;
+font-style: normal;
+font-weight: normal;
+font-size: 38px;
+line-height: 46px;
+text-align: center;
+
+color: #474747;
+}
+.section4 .feature-box-detail h2 span{
+    font-family: Montserrat_b;
+font-style: normal;
+font-weight: bold;
+font-size: 57px;
+line-height: 69px;
+
+color: #474747;
+}
+.section4 .featured-header-text ,.section4 .line-link{
+    font-family: Montserrat_r;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+text-align: justify;
+
+color: #000000;
+}
+.section4 .feature-box-detail{
+    padding: 70px 0;
 }
 body {
     margin: 0;
@@ -98,7 +180,7 @@ body {
     text-align: left;
     scroll-behavior: smooth;
    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
-   background-color:  #055f58 !important;
+   background-color:  #055f58 ;
 }
 
 [tabindex="-1"]:focus {
@@ -407,19 +489,34 @@ fieldset> :last-child {
     display: flex;
     width: 160px;
     justify-content: space-evenly; 
-    background: rgba(255, 255, 255, 0.4);
-    border-radius: 22px;
-    padding: 5px;
-   
+    background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 22px;
+    padding: 10px 40px 10px 20px;
 }
-.feature-box{
+   
+
+.feature-boxx p{
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+/* text-align: center; */
+
+color: #6F6F6F;
+margin-left: 5px;
+margin-top: auto;
+height: 35px;
+}
+.feature-box img{
     /* display: flex; */
     /* width: 160px; */
     /* justify-content: space-evenly; */
     background: #E8E8E8;
     box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.25);
     border-radius: 36px;
-    padding: 5px;
+    padding: 20px;
 }
 .feature-box2-img:hover{
     /* background-color: #f07923; */
@@ -459,9 +556,14 @@ border-radius: 36px; */
     font-size:55px;
 }
 .featured-header-text{
-    font-size: 14px;
-    letter-spacing: 0px;
-    text-align: left;
+    font-family: Montserrat_r;
+font-style: normal;
+font-weight: 500;
+font-size: 23px;
+line-height: 28px;
+
+color: #FFFFFF;
+
 }
 .feature-box-detail{
     width: 95%;
@@ -470,7 +572,7 @@ border-radius: 36px; */
 .section_3 .feature-box-detail{
     width: 100%;
     margin: auto;
-    transform: translateY(50%);
+    /* transform: translateY(50%); */
    
 }
 .section_5 .feature-box-detail{
@@ -483,7 +585,22 @@ border-radius: 36px; */
     /* margin-top: 25px; */
 }
 .feature-box-detail h2 a{
-    font-size: 54px;
+    font-family: Montserrat_m;
+font-style: normal;
+font-weight: 600;
+font-size: 90px;
+line-height: 110px;
+
+color: #FFFFFF;
+}
+.feature-box-detail h2 span{
+    font-family: Montserrat_m;
+font-style: normal;
+font-weight: 500;
+font-size: 56px;
+line-height: 68px;
+
+color: #FFFFFF;
 }
 .feature-box-detail h2 ul li{
     font-size: 20px;
@@ -505,9 +622,10 @@ color: #474747;
 .section_5{
     /* background-color: #055f58; */
 }
-/* #latest-tab-container {
-    background-image: url('/tmp/section4.png');
-} */
+.aa {
+    position: relative;
+    z-index: 4;
+}
 #contact_form input ,#contact_form textarea{
     border: 1px solid #fff;
     color: #fff;
@@ -539,7 +657,7 @@ q {
     width: 2% !important;
 }
 .carousel-item-div{
-    width: 95%;
+    width: 100%;
     margin: 0px 40px;
 }
 .img-responsive{
@@ -553,6 +671,12 @@ q {
 .xeber_basligi_all{
     display: flex;
     justify-content: space-around;
+    margin: 50px 0;
+    position: relative;
+    z-index:2;
+}
+.xeber_basligi .col-12:nth-child(2){
+padding: 0 50px;
 }
 /* .section8 .xeber_basligi{
     border-radius:140px  35px 35px 140px;
@@ -562,15 +686,21 @@ q {
 }
 .section8 .xeber_basligii img{
     border-radius: 50%;
-  }
+}
+/* .firlan:nth-of-type(2){
+    justify-content: flex-end;
+
+} */
   .rey_p{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 23px;
-    line-height: 28px;
-    
-    color: #495057;
+   
+font-family: Montserrat_r;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+
+color: #000000;
+
   }
   .footer_hr{
     background-color: #fff;
@@ -580,23 +710,23 @@ q {
   }
   .rey_p3{
     transform: translateY(30%);
-    font-family: Montserrat;
-font-style: normal;
-font-weight: 600;
-font-size: 38px;
-line-height: 46px;
-text-align: center;
-
-color: #474747;
-margin-left: 10px;
+    font-family: Montserrat_s;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    
+    color: #474747;
+margin: 0 10px;
   }
 .xeber_basligi{
     background: #EEEEEE;
 box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.15);
     width: 28%;
-    border-radius: 35px;
+    border-radius: 70px;
     margin: 15px auto;
-    padding: 20px
+    /* padding: 20px */
 }
 .xeber_basligii{
     background: #EEEEEE;
@@ -632,6 +762,20 @@ box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.15);
 .xeber_basligi p ,.xeber_basligi h3 ,.xeber_basligi a{
     color: #696969;
     ;
+}
+.xeber_basligi h3{
+    font-family: Montserrat_s;
+font-style: normal;
+font-weight: 600;
+font-size: 25px;
+line-height: 30px;
+}
+.xeber_basligi p,.xeber_basligi a{
+    font-family: Montserrat_s;
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 16px;
 }
 /* .aa:after {
     content: "";
@@ -1077,12 +1221,18 @@ a:not([href]):not([tabindex]):hover {
     display: inline-block;
     padding-left: 55px;
     font-weight: 500;
-    font-size:14px !important;
-    transition: var(--transition-duration) padding
+    margin-top: 2%;
+    /* font-size:14px !important; */
+    /* transition: var(--transition-duration) padding */
 }
 .mehsul_text{
-    color: #055f58;
+    font-family: Montserrat_s;
+    font-style: normal;
     font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    
+    color: #4E4E4E;
 }
 .line-link:focus,
 .line-link:hover {
@@ -1656,7 +1806,7 @@ button .mdi {
 #site-menu a {
     font-family: Roboto;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 23px;
     line-height: 27px;
     /* identical to box height */
@@ -2020,14 +2170,13 @@ button .mdi {
 
 }
 #featured p a {
-    /* margin-bottom: 2rem; */
-    font-family: Roboto;
+    font-family: Montserrat_r;
     font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    /* line-height: 19px; */
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    
     color: #FFFFFF;
-
 
 }
 
@@ -3578,6 +3727,11 @@ button .mdi {
   .select-items div,.select-selected {
     color: #fff;
     text-align: center;
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 23px;
+line-height: 27px;
     /* padding: 8px 16px; */
     border: 1px solid transparent;
     border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
@@ -3607,4 +3761,38 @@ button .mdi {
   
   .select-items div:hover, .same-as-selected {
     background-color: rgba(0, 0, 0, 0.1);
+  }
+  .fixed1{
+    background-color: #055f58;
+    /* border-radius: 50%; */
+    position: absolute;
+    z-index: 1;
+    float: left;
+    width: 1330px;
+    height: 1330px;
+    /* margin: 20px; */
+    shape-outside: circle(50% at 30%);
+    clip-path: circle(50% at 0%);
+    background-image: url(../../tmp/bg.png);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: bottom;
+    
+  }
+  .fixed2{
+    background-color: #055f58;
+    /* border-radius: 50%; */
+    position: absolute;
+    z-index: 1;
+    float: right;
+    width: 1330px;
+    height: 1330px;
+    /* margin: 20px; */
+    shape-outside: circle(50% at 30%);
+    clip-path: circle(50% at 0%);
+    background-image: url(../../tmp/bg.png);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: bottom;
+    
   }

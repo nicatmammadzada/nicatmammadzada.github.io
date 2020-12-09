@@ -59,12 +59,12 @@
     .section_3 .feature-box-detail {
         width: 90%;
         margin: auto;
-        transform: translateY(35%);
+        /* transform: translateY(35%); */
     }
     .section_5 .feature-box-detail{
         width: 90%;
         margin: auto;
-        transform: translateY(35%);
+        /* transform: translateY(35%); */
     }
     .wd-carusel__item {
           line-height: 200px;
