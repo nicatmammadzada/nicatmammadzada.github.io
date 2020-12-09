@@ -101,6 +101,9 @@ position: relative;
 z-index: 3;
 
 }
+.feature-box-detail{
+    margin-top: 50px;
+}
 .section3 .feature-box-detail h2 a {
     font-family: Montserrat_r;
 font-style: normal;

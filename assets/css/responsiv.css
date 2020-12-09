@@ -74,3 +74,37 @@
       }
       
 }
+@media (max-width:1400px){
+    .carousel-item-div {
+        width: 100%;
+        margin: 0px 40px;
+        transform: translateY(20%) !important;
+    }
+    .feature-box-detail h2 a {
+        font-family: Montserrat_m;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 81px;
+        line-height: 110px;
+        color: #FFFFFF;
+    }
+    .feature-box-detail h2 span {
+        font-family: Montserrat_m;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 49px;
+        line-height: 68px;
+        color: #FFFFFF;
+    }
+    .featured-header-text {
+        font-family: Montserrat_r;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        color: #FFFFFF;
+    }
+    .feature-box-detail{
+        margin-top: 0px !important;
+    }
+}
