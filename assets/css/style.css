@@ -2687,11 +2687,30 @@ button .mdi {
 .post-listing article {
     padding: 2rem
 }
-.episodes-listing article:hover{
-    background-color: #055f58;
-    color: #fff;
+.episodes-listing article:hover {
+    background-color: #fff;
+    /* color:#000; */
     border-radius: 15px;
 }
+.episodes-listing article:hover .entry-title a{
+
+    color:#000;
+
+}
+.episodes-listing article:hover .entry-content p {
+
+    color:#000;
+
+}
+/* .entry-title a:hover, .entry-content p:hover {
+    color: #000;
+}
+.entry-content p:hover .entry-title a  {
+    color: #000; */
+}
+/* .episodes-listing article:hover.episodes-listing .entry-content> :last-child{
+    color: #000;
+} */
 @media (min-width: 768px) {
 
     .episodes-listing article,
