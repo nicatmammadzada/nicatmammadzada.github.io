@@ -514,11 +514,11 @@ height: 35px;
 }
 .feature-box img{
     /* display: flex; */
-    /* width: 160px; */
+    width: 80px;
     /* justify-content: space-evenly; */
     background: #E8E8E8;
     box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.25);
-    border-radius: 36px;
+    border-radius: 25px;
     padding: 20px;
 }
 .feature-box2-img:hover{
