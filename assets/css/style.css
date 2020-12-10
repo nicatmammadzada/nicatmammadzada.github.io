@@ -3799,3 +3799,6 @@ line-height: 27px;
     background-position: bottom;
     
   }
+  #site-menu .menu-item-has-children li a {
+    color: #055f58;
+  }
