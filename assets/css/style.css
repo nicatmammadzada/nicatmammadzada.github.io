@@ -499,8 +499,13 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 22px;
     padding: 10px 40px 10px 20px;
 }
-   
-
+.feature-boxx:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+}
+.feature-boxx:hover .feature-boxx p{
+    color: #fff !important;
+}
 .feature-boxx p{
     font-family: Roboto;
 font-style: normal;
@@ -564,7 +569,7 @@ border-radius: 36px; */
     font-family: Montserrat_r;
 font-style: normal;
 font-weight: 500;
-font-size: 23px;
+font-size: 22px;
 line-height: 28px;
 
 color: #FFFFFF;
@@ -593,7 +598,7 @@ color: #FFFFFF;
     font-family: Montserrat_m;
 font-style: normal;
 font-weight: 600;
-font-size: 90px;
+font-size: 85px;
 line-height: 110px;
 
 color: #FFFFFF;
@@ -602,7 +607,7 @@ color: #FFFFFF;
     font-family: Montserrat_m;
 font-style: normal;
 font-weight: 500;
-font-size: 56px;
+font-size: 53px;
 line-height: 68px;
 
 color: #FFFFFF;
@@ -732,7 +737,7 @@ margin: 0 10px;
 .xeber_basligi{
     background: #EEEEEE;
 box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.15);
-    width: 25%;
+    width: 28%;
     border-radius: 70px;
     margin: 15px auto;
     /* padding: 20px */
@@ -749,7 +754,7 @@ box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.15);
     height: 200px;
     object-fit: cover;
     width: 100%;
-    border-radius: 35px 35px 0 0;
+    border-radius: 57px 57px 0 0;
 }
 .rey_img{
     height: 100px !important;
@@ -1229,7 +1234,7 @@ a:not([href]):not([tabindex]):hover {
 .line-link {
     position: relative;
     display: inline-block;
-    padding-left: 55px;
+    padding-left: 20px;
     font-weight: 500;
     margin-top: 2%;
     /* font-size:14px !important; */
@@ -1259,13 +1264,15 @@ a:not([href]):not([tabindex]):hover {
     position: absolute;
     top: 50%;
     left: 0;
-    width: 35px;
+    width: 10px;
     height: 2px;
     margin-top: -1px;
     background-color: #fff;
     transition: var(--transition-duration) width
 }
-
+.xeber_basligi .line-link:before,.section3.line-link:before ,.section4 .line-link:before{
+background-color: #696969;;
+}
 .line-link:focus:before,
 .line-link:hover:before {
     width: 30px
@@ -1817,7 +1824,7 @@ button .mdi {
     font-family: Roboto;
     font-style: normal;
     font-weight: 400;
-    font-size: 23px;
+    font-size:14px;
     line-height: 27px;
     /* identical to box height */
     
@@ -1825,7 +1832,11 @@ button .mdi {
     color: #FFFFFF;
     /* transition: color var(--transition-duration), opacity var(--transition-duration) */
 }
-
+.social-navigation i:hover{
+    -webkit-transition: all .3s ease-out 0s;
+    -webkit-transform: rotateY(180deg);
+    color: #fd7e14 !important;
+}
 #site-menu li,
 #site-menu ul ul {
     margin: 0
@@ -3743,7 +3754,7 @@ button .mdi {
     font-family: Roboto;
 font-style: normal;
 font-weight: normal;
-font-size: 23px;
+font-size: 14px;
 line-height: 27px;
     /* padding: 8px 16px; */
     border: 1px solid transparent;
