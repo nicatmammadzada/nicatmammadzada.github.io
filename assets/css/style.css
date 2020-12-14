@@ -3894,15 +3894,7 @@ line-height: 27px;
     display: flex;
     flex-flow: row wrap;
 }
-main {
-    flex: 1 1 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font: 10em "Oswald", sans-serif;
-    color: #9b9b9b;
-    line-height: 1;
-}
+
 footer {
     /* background: #373737; */
     margin-top: auto;
