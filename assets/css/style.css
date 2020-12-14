@@ -3918,7 +3918,7 @@ footer {
 .footer-list-header {
     padding: 10px 0 5px 0;
     color: #fff;
-    font-size: 31px !important;
+    font-size: 24px !important;
 }
 .footer-list-anchor {
     font-family: Roboto;
@@ -3954,7 +3954,7 @@ color: #FFFFFF;
 .footer-social-connect {
     display: flex;
     align-items: center;
-    font: 3.5em "Oswald", sans-serif;
+    font-size: 24px;
     color: #fff;
 }
 .footer-social-small {
@@ -3962,7 +3962,7 @@ color: #FFFFFF;
     padding: 0px 20px;
 }
 .footer-social-overlap > a {
-    font-size: 3em;
+    font-size: 24px;
 }
 .footer-social-overlap > a:not(:first-child) {
     margin-left: 0.38em;
