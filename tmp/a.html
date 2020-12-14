@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *
+    {
+        margin: 0;
+        padding: 0;
+    }
+    body
+    {
+        position: relative;
+        height: 200vh;
+    }
+    .wrapper
+    {
+        height: inherit;
+        width: 99vw;
+        position: absolute;
+    }
+    .c
+    {
+        background-image: url('./Rectangle 1.png');
+        background-size: cover;
+        width: 416px;
+        height: 1131px;
+      
+    }
+ 
+
+    .c:nth-child(2n+1)
+    {
+        transform: rotate(180deg);
+        margin-left: auto;
+        top: 80%;
+    }
+   
+    @media only screen and (max-width: 768px) {
+        .c
+        {
+            width: 133px;
+            height: 365px;
+        }
+        .c:nth-child(2n+1)
+        {
+            transform: rotate(180deg);
+            right: 0;
+            top: 40%;
+        }
+       
+    }
+</style>
+
+<body>
+<div class="wrapper">
+    <div class="c">
+
+    </div>
+    <div class="c">
+
+    </div>
+    <div class="c">
+
+    </div>
+  
+</div>
+
+</div>
+</body>
+</html>

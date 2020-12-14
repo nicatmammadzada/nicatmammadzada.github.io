@@ -30,6 +30,39 @@
 		integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
 		crossorigin="anonymous"></script>
 	<style id="anii-inline-style">
+		.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 30px;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: transparent;
+}
+
+.rey_bg:hover .overlay {
+  opacity: 1;
+}
+.rey_bg:hover .rey_img{
+	background-color: transparent;
+}
+
+.icon {
+  color: white;
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.fa-thumbs-up:hover {
+  color:#f07923;
+}
 		.sales-box {
 			background-image: url(tmp/sample-sales-background.jpg);
 		}
@@ -200,6 +233,55 @@
 			background-color: rgba(0, 0, 0, 0.1);
 		}
 	</style>
+	<style>
+		
+		body
+		{
+			position: relative;
+			
+		}
+		.wrapper
+		{
+			height: inherit;
+			width: 99vw;
+			position: absolute;
+		}
+		.c
+		{
+			background-image: url('tmp/Rectangle\ 1.png');
+			background-size: cover;
+			width: 416px;
+			height: 1131px;
+			transform: rotate(180deg);
+			margin-right:0;
+			margin-left: auto;
+		  
+		}
+	 
+	
+		.c:nth-child(2n+1)
+		{
+			transform: rotate(0deg);
+			margin-right:  auto;
+			margin-left: 0;
+			top: 80%;
+		}
+	   
+		@media only screen and (max-width: 768px) {
+			.c
+			{
+				width: 133px;
+				height: 365px;
+			}
+			.c:nth-child(2n+1)
+			{
+				transform: rotate(180deg);
+				right: 0;
+				top: 40%;
+			}
+		   
+		}
+	</style>
 </head>
 
 <body class="home footer-sticky" style="background-color: #fff;">
@@ -298,14 +380,17 @@
 											<div class="row justify-content-around ">
 
 												<div class=" feature-boxx">
+													<img class="strike_abs" src="tmp/strike.png">
 													<img class="feature-box-img " src="tmp/metbee2.png">
 													<p class="text-center " style="width: 50px;">Mətbəə</p>
 												</div>
 												<div class=" feature-boxx">
+													<img class="strike_abs" src="tmp/strike.png">
 													<img class="feature-box-img " src="tmp/nesr2.png">
 													<p class="text-center " style="width: 50px;">Nəşriyyat</p>
 												</div>
 												<div class="feature-boxx">
+													<img class="strike_abs" src="tmp/strike.png">
 													<img class="feature-box-img " src="tmp/reqemsalcap2.png">
 													<p class="text-center " style="width: 50px;">Rəqəmsal Çap</p>
 												</div>
@@ -346,12 +431,22 @@
 
 			</div>
 	</header>
-
-	<main id="content" style="background-image: url(tmp/bg.png);">
-
-		<div class="fixed1">
-
+	<div class="wrapper">
+		<div class="c">
+	
 		</div>
+		<div class="c">
+	
+		</div>
+		<div class="c">
+	
+		</div>
+	  
+	</div>
+	
+	<main id="content" class="" style="background-image: url(tmp/bg.png);">
+
+		
 		<div class="container">
 			<div class="xeber_basligi_all">
 
@@ -671,7 +766,11 @@
 						</div>
 						<div class="col-5 rey_bg">
 							<img class="rey_img " style="left: 10%;" src="tmp/user1.jpg">
-
+							<div class="overlay">
+								<a href="#" class="icon" title="User Profile">
+									<i class="fa fa-thumbs-up" aria-hidden="true"></i>
+								</a>
+								</div>
 						</div>
 
 					</div>
@@ -682,6 +781,11 @@
 					<div class="row">
 						<div class="col-5 rey_bg">
 							<img class="rey_img" style="right: 20%;" src="tmp/user1.jpg">
+							<div class="overlay">
+								<a href="#" class="icon" title="User Profile">
+									<i class="fa fa-thumbs-up" aria-hidden="true"></i>
+								</a>
+								</div>
 						</div>
 						<div class="col-7">
 							<h3 class="rey_p3 text-left">Əli Əliyev</h3>

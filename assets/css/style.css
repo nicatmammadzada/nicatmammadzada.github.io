@@ -526,8 +526,8 @@ height: 35px;
 }
 .svg_img svg{
     color: red;
-    color-fill: red;
-    fill: red;
+    color-fill: ;
+    fill: #;
     stroke: red;
 }
 .img_bg{
@@ -539,6 +539,10 @@ height: 35px;
     box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.25);
     border-radius: 63px;
     padding: 30px;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
 }
 .img_bg i{
     font-size: 58px;
@@ -568,16 +572,23 @@ height: 35px;
     border-radius: 13px;
     padding: 8px;
 }
+.strike_abs{
+    height: 10px;
+    width: 12px;
+    margin-right: -10px;
+    margin-top: -3px;
+}
 .feature-box-img:before{
-    content: "->";
-    /* position: absolute;
+    content: "";
+    position: absolute;
     top: -1px;
     right: -1px;
     transform:translate(50%,-50%);
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #4da6ff; */
+    background: #4da6ff;
+    display: block;
 }
 .menu-item-type-custom a{
    color: #fff !important;
