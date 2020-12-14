@@ -109,14 +109,14 @@
     }
 }
 @media(max-width:1366px){
-    .xeber_basligi {
+    /* .xeber_basligi {
         background: #EEEEEE;
         box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.15);
         width: 30%;
         border-radius: 70px;
         margin: 15px auto;
         /* padding: 20px; */
-    }
+    
     .xeber_basligi .col-12:nth-child(2) {
         padding: 10px 40px;
     }
