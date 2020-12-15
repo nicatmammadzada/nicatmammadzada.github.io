@@ -615,6 +615,10 @@ color: #FFFFFF;
 .sub-menu .menu-item a:after{
     content: unset;
 }
+.sub-menu{
+    background-color: #fff;
+    border-radius: 25px !important;
+}
 .menu-item-type-custom i{
     color: #fff !important;
 
@@ -2179,7 +2183,7 @@ button .mdi {
 
     #site-menu .menu-item-has-children li {
         display: block;
-        background-color:rgba(255, 255, 255, 0.4);
+        /* background-color:rgba(255, 255, 255, 0.4); */
     }
 
     #site-menu .menu-item-has-children li:first-child {
@@ -3945,6 +3949,12 @@ line-height: 27px;
   #site-menu .menu-item-has-children li a {
     color: #055f58;
   }
+  #site-menu .menu-item-has-children li a:hover{
+    transform: translateX(5px);
+    transition: 0.5s;
+    outline: none;
+  }
+  
   .generic-anchor {
     color: #fff;
 }
