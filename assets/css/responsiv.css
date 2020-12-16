@@ -1,7 +1,58 @@
 @media (max-width: 768px) {
+    .c{
+        display: none;
+    }
+    .feature-box-detail h2 {
+        text-align: center !important;
+    }
+    .section3 {
+        width: auto;
+        margin-left: auto;
+        margin-right: 0;
+        background: transparent;
+        border-radius: 365px 0px 0px 365px;
+        position: relative;
+        z-index: 3;}
+        .section4{
+            background-color: transparent;
+        }
+        .xeber_basligii{
+  
+            border-radius: 65px 0px 0px 65px;
+             margin: 15px auto;
+             width: 90%;
+             /* padding: 20px */
+         }
+     .feature-boxx p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        /* text-align: center; */
+        color: #e8e8e8;
+        margin-left: 5px;
+        /* margin-top: 6px; */
+        /* height: 35px; */
+    }
+    .feature-boxx {
+        display: flex;
+        width: 140px;
+        margin:10px 0;
+        justify-content: space-evenly;
+        background:transparent;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 45px 65px 0px 45px;
+        padding: 10px 40px 10px 20px;
+        -webkit-transition: background-color 2s ease-out;
+        -moz-transition: background-color 2s ease-out;
+        -o-transition: background-color 2s ease-out;
+        transition: background-color 2s ease-out;
+    }
     .carousel-item-div {
         width: 95%;
         margin: auto;
+        transform: translateY(0%) !important;
     }
    
     .xeber_basligi_all {
@@ -9,7 +60,7 @@
         flex-direction: column;
     }
     .xeber_basligi {
-        background-color: #055f58;
+        /* background-color: #055f58; */
         width: 95%;
     }
     .section_5 .feature-box-detail h2 a {
@@ -20,7 +71,7 @@
       margin-top: 15px;
     }
     .feature-box-detail h2 a {
-        font-size: 25px;
+        font-size: 25px !important;
     }
     .section8 .xeber_basligi {
         border-radius: 35px 35px 35px 35px;
@@ -56,6 +107,7 @@
 
 }
 @media (min-width:768px){
+    
     .section_3 .feature-box-detail {
         width: 90%;
         margin: auto;
@@ -86,7 +138,7 @@
     .carousel-item-div {
         width: 100%;
         margin: 0px 40px;
-        transform: translateY(20%) !important;
+        transform: translateY(20%) ;
     }
     .feature-box-detail h2 a {
         font-family: Montserrat_m;
