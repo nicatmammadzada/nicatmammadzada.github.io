@@ -1,4 +1,118 @@
 @media (max-width: 768px) {
+    .section4 .feature-box-detail h2 span {
+        font-family: Montserrat_b;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 47px;}
+    .section4 .feature-box-detail{
+        padding: 10px !important;
+    }
+    .img_bg {
+        /* display: flex; */
+        width: 90px;
+        margin: auto;
+        /* justify-content: space-evenly; */
+        background: linear-gradient(180deg, rgba(162, 240, 233, 0.546875) 0%, #055C54 100%), #055C54;
+        box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        padding: 0 16px;
+        -webkit-transition: background-color 2s ease-out;
+        -moz-transition: background-color 2s ease-out;
+        -o-transition: background-color 2s ease-out;
+        transition: background-color 2s ease-out;
+    }
+  
+        .carousel-item  .col-12:nth-child(odd){
+            order: 2;
+        }
+        .carousel-item .col-12:nth-child(even){
+            order: 1;
+        }
+   
+    
+    .episodes-listing .entry-content p, .post-listing .entry-content p {
+        opacity: 0.75;
+        font-size: 8px;
+        /* text-align: justify; */
+        /* text-align: center; */
+    }
+    .tab-container .tabs li a{
+        font-size: 8px;
+        padding: 0.2rem;
+    }.tab-container .tabs li.active a:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 35px;}
+    .categories a{
+        font-size: 14px;
+    }
+    .xeber_time{
+        font-size: 14px;
+    }
+    .xeber_etrafli{
+        font-size: 14px;
+    }
+    .table th, .table td {
+        border-top: none;
+        border-bottom: 2px solid #fff;
+        color: #fff;
+        font-size: 17px !important;
+        width: auto !important;
+    }
+    blockquote {
+        position: relative;
+        margin: 0; 
+        padding-left: 0;
+         padding-right: 0;
+        line-height: 1.25;
+    }
+    .nesriyyat p {
+        width: 95%;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px !important;
+        line-height: 186.9%;
+        /* color: black; */
+    }
+    .nesriyyat:nth-child(odd) {
+        background-color: #055f58;
+        color: #fff;
+        border-radius: 0%;
+    }
+    .range-slider__value {
+        font-size: 20px;}
+    .nesriyyat {
+       padding: 10px;
+    }
+    .nesriyyat h3{
+        font-size: 24px;
+        text-align: center;
+    }
+    h1{
+        font-size: 24px;
+    }
+    .nesriyyat p{
+        font-size: 18px;
+        text-align: center;
+    }
+    h5{
+        font-size: 24px;
+    }
+    h4{
+        font-size: 24px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    h2{
+        font-size:24px ;
+    }
+    p{
+        font-size: 20px;
+    }
     .c{
         display: none;
     }
@@ -23,7 +137,11 @@
              width: 90%;
              /* padding: 20px */
          }
+         .strike_abs{
+             display: none;
+         }
      .feature-boxx p {
+        display: none;
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
@@ -37,21 +155,21 @@
     }
     .feature-boxx {
         display: flex;
-        width: 140px;
+        width:auto;
         margin:10px 0;
         justify-content: space-evenly;
         background:transparent;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 45px 65px 0px 45px;
-        padding: 10px 40px 10px 20px;
+        padding: 0;
         -webkit-transition: background-color 2s ease-out;
         -moz-transition: background-color 2s ease-out;
         -o-transition: background-color 2s ease-out;
         transition: background-color 2s ease-out;
     }
     .carousel-item-div {
-        width: 95%;
-        margin: auto;
+        width: 95% !important;
+        margin: 25px !important;
         transform: translateY(0%) !important;
     }
    
@@ -97,7 +215,7 @@
     }
     .tab-container .tabs {
         list-style: none;
-        width: 90%;
+        width: 100%;
         margin: auto;
         padding: 0;
         display: flex;

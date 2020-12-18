@@ -32,12 +32,15 @@ line-height: 186.9%;
 .nesriyyat .row{
     padding: 10px;
 }
-.nesriyyat:nth-child(even) .col-5{
-    order: 1;
+@media (min-width: 769px){
+    .nesriyyat:nth-child(even) .col-sm-5{
+        order: 1;
+    }
+    .nesriyyat:nth-child(even) .col-sm-7{
+        order: 2;
+    }
 }
-.nesriyyat:nth-child(even) .col-7{
-    order: 2;
-}
+
 .nesriyyat:nth-child(odd){
     background-color:#055f58;
     color: #fff;
@@ -4066,7 +4069,7 @@ button .mdi {
         width: 50px;
         background-color:#fd7e14;
         padding: 10px;
-        border-radius: 25px;
+        border-radius: 15px;
     }
     .site-title a {
         display: inline-block;
